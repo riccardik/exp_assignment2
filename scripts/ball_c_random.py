@@ -39,19 +39,20 @@ def talker():
     
 
     while not rospy.is_shutdown():
-        rospy.loginfo('Command: (m)ove ball, (d)isappear ball:')
+        #rospy.loginfo('Command: (m)ove ball, (d)isappear ball:')
         #cmdt = raw_input()
         cmdt = random_cmd()
         if cmdt=='m':
             cmd = PlanningActionGoal()
-            rospy.loginfo('insert x and y')
+            #rospy.loginfo('insert x and y')
             x = random_coord()
             cmd.goal.target_pose.pose.position.x = float(x)
             y = random_coord()
             cmd.goal.target_pose.pose.position.y = float(y)
             cmd.goal.target_pose.pose.position.z = 0.5
             time.sleep(1)
-            pub.publish(cmd)        
+            pub.publish(cmd) 
+            rospy.loginfo('Moving Ball!')       
         elif cmdt=='d':
             cmd = PlanningActionGoal()
             cmd.goal.target_pose.pose.position.x = float(x)
@@ -59,6 +60,7 @@ def talker():
             cmd.goal.target_pose.pose.position.z = -0.5
             time.sleep(1)
             pub.publish(cmd) 
+            rospy.loginfo('Ball has disappeared!')       
             
         else:
            rospy.loginfo('Wrong command')

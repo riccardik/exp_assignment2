@@ -1,4 +1,13 @@
 
+/**
+
+\mainpage
+
+\htmlinclude manifest.html
+
+\b Package for the assignment 2 of Esperimental Robotics Laboratory
+
+
 
 # Experimental Robotics Laboratory - Assignment 2
 ## Riccardo Lastrico - 4070551
@@ -141,3 +150,6 @@ Riccardo Lastrico - 4070551
 
 Email: riky.lastrico@gmail.com
 </p>
+
+
+**/

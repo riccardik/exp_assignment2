@@ -1,0 +1,26 @@
+actions:
+- Planning
+authors: ''
+brief: ''
+bugtracker: ''
+depends:
+- nav_msgs
+- catkin
+- roscpp
+- std_msgs
+- actionlib_msgs
+- sensor_msgs
+- image_transport
+- message_generation
+- rospy
+- tf
+- geometry_msgs
+- cv_bridge
+description: Second assignment of the course Experimental Robotics Laboratory
+license: TODO
+maintainers: Riccardo Lastrico <s4070551@studenti.unige.it>
+msgs: []
+package_type: package
+repo_url: ''
+srvs: []
+url: ''

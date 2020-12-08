@@ -48,6 +48,11 @@ global status
 status = 0
 
 def detectedCallback(data):
+    """Callback to read an integer from a topic
+        this integer tells if the ball has been detected or not
+
+    
+    """
     global detected
     detected = data.data
 

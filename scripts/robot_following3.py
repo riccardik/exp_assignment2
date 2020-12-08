@@ -33,7 +33,7 @@ reached = 1
 class image_feature:
 
     def __init__(self):
-        '''Initialize ros publisher, ros subscriber'''
+        '''Initialize ros publishers, ros subscribers'''
         rospy.init_node('image_feature', anonymous=True)
      # topic where we publish
         self.image_pub = rospy.Publisher("/robot2/output/image_raw/compressed",
@@ -52,6 +52,10 @@ class image_feature:
                                            Int32, self.statecallback,  queue_size=1)
 
     def statecallback(self, data):
+        """Callback to miro read state from a topic
+
+    
+        """
         global mirostate
         mirostate = data.data
 
@@ -68,6 +72,7 @@ class image_feature:
         np_arr = np.fromstring(ros_data.data, np.uint8)
         image_np = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)  # OpenCV >= 3.0:
 
+        #range of color for the segmentation
         greenLower = (50, 50, 20)
         greenUpper = (70, 255, 255)
 
@@ -129,6 +134,7 @@ class image_feature:
                     time.sleep(2)
                     ang1.data = 0
                     self.ang_pub.publish(ang1)
+                    #set reached to 1 to do the head movement just one time
                     reached = 1
                 elif  vel.angular.z > 0.05 and vel.linear.x > 0.05 :
                     
