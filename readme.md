@@ -13,7 +13,7 @@ The robot moves into a 2D space and can receive external commands that may chang
 <p>
 This is a graph of the system architecture (obtained via rqt-graph):
 
-![System Architecture](./system_architecture.jpg)
+![System Architecture](./system_architecture.png)
 
 
 </p>
@@ -45,7 +45,7 @@ The node <code>state_miro</code> contains the state machine that will be describ
 <p>
 This is a graph of the possible states (obtained via smach-viewer):
 
-![System Architecture](./state_machine.jpg)
+![System Architecture](./state_machine.png)
 
 The possible states are: `sad`
 <ul>
