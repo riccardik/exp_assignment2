@@ -119,12 +119,12 @@ This is the robot:
 
 ### System limitation
 <p>
-Sometimes the ball movement makes the robot "roll" on itself and goes into a position where it cannot moved anymore and have to be "flipped" manually from the user.
+Sometimes the ball movement makes the robot "roll" on itself and goes into a position where it cannot moved anymore and have to be "flipped" manually from the user. Other times, in the generation of the random movements, more request of actions overlap and the action server so do not properly behave as planned; time delays did not solve the issues, this is not actually a big issues because the movement should be random, nevertheless is a non desired behavior. 
 </p>
 
 ### Possible improvements
 <p>
-
+Add a velocity control for the robot when the ball moves really close to it and find a way to avoid the overlap of the action requests.
 </p>
 
 ### Documentation
