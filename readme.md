@@ -112,7 +112,7 @@ The system also features the possibility to be controlled by the user or behave 
 
 This is the robot:
 
-![map](./robot.png)
+![robot](./robot.png)
 
 
 </p>
