@@ -12,6 +12,12 @@
   <gazebo reference="arm_base_link">
     <material>Gazebo/Red</material>
   </gazebo>
+   <gazebo reference="tail_link2">
+    <material>Gazebo/Red</material>
+  </gazebo>
+   <gazebo reference="tail_link1">
+    <material>Gazebo/Red</material>
+  </gazebo>
 
   <gazebo reference="arm_link_01">
     <material>Gazebo/Red</material>

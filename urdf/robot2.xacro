@@ -152,7 +152,7 @@
         <!-- <box size="0.1 0.1 0.1"/> -->
         <cylinder radius="0.02" length="0.20"/>
       </geometry>
-      <material name="blue" />
+      <material name="red" />
   	</visual>
   </link>
 
@@ -180,7 +180,7 @@
         <!-- <box size="0.1 0.1 0.1"/> -->
         <cylinder radius="0.02" length="0.23"/>
       </geometry>
-      <material name="blue" />
+      <material name="red" />
   	</visual>
   </link>
 
