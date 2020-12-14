@@ -125,7 +125,7 @@ Sometimes the ball movement makes the robot "roll" on itself and goes into a pos
 ### Possible improvements
 <p>
 Add a velocity control for the robot when the ball moves really close to it and find a way to avoid the overlap of the action requests.
-Speaking of the velocity control, the robot itself is a bit slow, the control of the velocity could be improved by accelerating slowly at the beginning and then increase when it is moving, to avoid a big acceleration at the beginning that will flip the robot. I added a tail that could possibly avoid the flipping and improve the robot stability in acceleration but i haven't done a lot of testing to see if it is effective.
+Speaking of the velocity control, the robot itself is a bit slow, the control of the velocity could be improved by accelerating slowly at the beginning and then increase when it is moving, to avoid a big acceleration at the beginning that will flip the robot. I added a tail that could possibly avoid the flipping and improve the robot stability while accelerating but i haven't done a lot of testing to see if it is effective.
 </p>
 
 ### Documentation
