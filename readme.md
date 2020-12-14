@@ -34,13 +34,13 @@ This is a graph of the possible states (obtained via smach-viewer):
 
 The possible states are: 
 <ul>
-<li><code>SLEEP</code>, the robot is sleeping and so it wont respond to any command. After a while in any other state, even if not commanded to do so, it reaches location [-6,-6]. After some amount of time, the robot goes again in state NORMAL .</li>
+<li><code>SLEEP</code>, the robot is sleeping and so it wont respond to any command. After a while in any other state, even if not commanded to do so, it reaches location [-6,-6]. After some amount of time, the robot goes again in state `NORMAL`.</li>
 <li><code>NORMAL</code>, the robot is in the predefined state, it moves randomly around the map until he detects the ball in his lane of sight: the robot will than pass to the <code>PLAY</code> state. </li>
 
 <li><code>PLAY</code>, the robot enters in this state from the <code>NORMAL</code> one after seeing the ball: it chases it until it stops moving, than moves his head 45° to the left and to the right, then it continues staring the ball until it moves. If the ball disappears, the robot will go back to the <code>NORMAL</code> state.
 
 </li>
-></ul>
+</ul>
 </p>
 
 #####  Packages and file list
@@ -61,7 +61,7 @@ In particular, we have:
  - `launch` folder:
      - `display.launch`: launch file that launches Rviz to check the model of the robot;
      - `gazebo_world2.launch`: launches the simulation where commands are received from the user;
-     - `gazebo_world2_random.launch`: launches the simulation where commands are generated randomlycd;
+     - `gazebo_world2_random.launch`: launches the simulation where commands are generated randomly;
 
 </p>
 
@@ -119,7 +119,7 @@ This is the robot:
 
 ### System limitation
 <p>
-Sometimes the ball movement makes the robot "roll" on itself and goes into a position where it cannot moved anymore and have to be "flipped" manually from the user. Other times, in the generation of the random movements, more request of actions overlap and the action server so do not properly behave as planned; time delays did not solve the issues, this is not actually a big issues because the movement should be random, nevertheless is a non desired behavior. 
+Sometimes the ball movement makes the robot "roll" on itself and goes into a position where it cannot moved anymore and have to be "flipped" manually from the user. Other times, in the generation of the random movements, more request of actions overlap and the action server so do not properly behave as planned; time delays did not solve the issue, this is not actually a big issue because the movement should be random, nevertheless is a non desired behavior. 
 </p>
 
 ### Possible improvements
