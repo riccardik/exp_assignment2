@@ -95,7 +95,7 @@ Some packages are needed:
 
 This runs the random simulation, the state of the robot will be outputted on the shell with the information about the command received and an eventual change of state.
 
-If you want to interact with the simulation by givin commands you have to run:
+If you want to interact with the simulation by giving direct commands you have to run:
     
     source ~/my_ros/devel/setup.bash 
     roslaunch exp_assignment2 gazebo_world2.launch
