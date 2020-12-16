@@ -5,6 +5,7 @@
 
 ### Assignment contents 
 <p>The assignment content is an exercise based on ROS about a finite state machine that represent a pet-like robot behavior; this robot moves in a 3D simulation using Gazebo and is equipped with an RGB camera. Using that camera, is able to recognize a ball that moves around in the environment, following the user's commands.
+
 Map of the environment:
 
 ![map](./map_area.png)
@@ -104,7 +105,7 @@ and then open a new shell and run:
     rosrun exp_assignment2 ball_c.py 
 A command line interface willconsent to send commands to move the ball or make it disappear.
 
-For both, an additional window will open: this contains the output image from the robot's camera.
+For both, an additional window will open: this contains the output image from the robot's camera:
 
 ![cameraview](./cameraview.png)
 </p>
