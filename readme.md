@@ -78,6 +78,7 @@ In particular, we have:
 
     
 Some packages are needed:
+
     smach-viewer
     cv_bridge
     actionlib
