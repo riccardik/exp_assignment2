@@ -37,7 +37,7 @@ This is a graph of the possible states (obtained via smach-viewer):
 
 The possible states are: 
 <ul>
-<li><code>SLEEP</code>, the robot is sleeping and so it wont respond to any command. After a while in any other state, even if not commanded to do so, it reaches location [-6,-6]. After some amount of time, the robot goes again in state `NORMAL`.</li>
+<li><code>SLEEP</code>, the robot is sleeping and so it wont respond to any command. After a while in any other state, even if not commanded to do so, it reaches location [-6,-6]. After some amount of time, the robot goes again in state <code>NORMAL</code>. </li>
 <li><code>NORMAL</code>, the robot is in the predefined state, it moves randomly around the map until he detects the ball in his lane of sight: the robot will than pass to the <code>PLAY</code> state. </li>
 
 <li><code>PLAY</code>, the robot enters in this state from the <code>NORMAL</code> one after seeing the ball: it chases it until it stops moving, than moves his head 45° to the left and to the right, then it continues staring the ball until it moves. If the ball disappears, the robot will go back to the <code>NORMAL</code> state.
